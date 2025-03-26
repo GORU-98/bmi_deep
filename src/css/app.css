@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap");
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Signika Negative", sans-serif;
+  scroll-behavior: smooth;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3.5rem;
+  padding: 0 8%;
+}
+nav h1 {
+  font-size: 2.1rem;
+  cursor: pointer;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  gap: 3rem;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+nav ul li a:hover {
+  color: #0EBA82;
+}
+nav button {
+  padding: 0.7rem 1.5rem;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  background-color: rgb(144, 105, 6);
+  cursor: pointer;
+  border-radius: 100vw 0 0 100vw;
+  transition: all 0.5s;
+}
+nav button:hover {
+  filter: grayscale(1);
+}
+
+.homepage {
+  padding: 6% 8%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: #D9FBEA;
+}
+
+.homepic .pic img {
+  width: 38rem;
+  height: 28rem;
+  cursor: pointer;
+  /* border-radius: 50%; */
+  background: transparent;
+}
+
+.hometext h1 {
+  margin-top: 0;
+  font-size: 4rem;
+}
+
+.hometext h4 {
+  gap: 1rem;
+  margin-top: -1rem;
+  font-size: 1.2rem;
+}
+
+.NavLink, .address_btn, .alert_btn {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 0.6rem 1.6rem;
+  background-color: #0EBA82;
+  border-radius: 0.2rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+}
+
+.serv_page {
+  gap: 3rem;
+}
+.serv_page .cards {
+  padding: 4% 8%;
+}
+.serv_page .cards .card_txt {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.serv_page .cards .card_txt p {
+  margin-top: 0%;
+}
+.serv_page .cards .card_page {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2.5rem;
+  gap: 2rem;
+}
+.serv_page .cards .card_page .card {
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.serv_page .cards .card_page .card img {
+  width: 2rem;
+  height: 2rem;
+}
+.serv_page .start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2.5rem;
+  padding: 3.5rem 0;
+  background-color: #0EBA82;
+}
+.serv_page .start h1 {
+  margin-top: 0%;
+}
+.serv_page .start p {
+  margin-top: 0%;
+}
+.serv_page .start button {
+  color: #0EBA82;
+  background-color: white;
+  margin-top: 1rem;
+}
+
+.app-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+  min-height: 100vh;
+}
+.app-container h1 {
+  color: #333;
+}
+
+.bmi-diet {
+  background: white;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.bmi-diet h2 {
+  color: #28a745;
+}
+.bmi-diet .input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+.bmi-diet .input-group label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.bmi-diet .input-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.bmi-diet button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.bmi-diet button:hover {
+  background-color: #1e7e34;
+}
+.bmi-diet .result {
+  margin-top: 15px;
+}
+.bmi-diet .result h2 {
+  margin: 0;
+}
+.bmi-diet .result p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+.bmi-diet .result .underweight {
+  color: #ffa500;
+}
+.bmi-diet .result .normal-weight {
+  color: #28a745;
+}
+.bmi-diet .result .overweight {
+  color: #dc3545;
+}
+.bmi-diet .result .obese {
+  color: #8b0000;
+}
+.bmi-diet .diet-plan {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+}/*# sourceMappingURL=app.css.map */

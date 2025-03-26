@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
+body{
+    margin: 0;
+   
+    box-sizing: border-box;
+font-family: 'Signika Negative', sans-serif;
+scroll-behavior: smooth;
+// position: relative;
+
+}
+
+$bg:0.1rem solid black;
+
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+    
+}
+@mixin btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    background-color: rgb(144, 105, 6);
+    cursor: pointer;
+    border-radius: 100vw 0 0 100vw;
+    transition: all 0.5s ;
+    &:hover{
+       
+        filter: grayscale(1);
+    }
+    
+}
+
+@mixin list {
+    li{
+        list-style: none;
+        a{
+            color: black;
+            text-decoration: none;
+            transition: all 0.5s ;
+            &:hover{
+                color: #0EBA82;
+            }
+        }
+}
+}
+
+@mixin icon {
+    img{
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    
+}
+nav{
+    @include flex();
+    height: 3.5rem;
+    padding: 0 8%;
+    
+    h1{
+        font-size: 2.1rem;
+        cursor: pointer;
+    }
+    
+    ul{
+        @include flex();
+        font-size: 1.3rem;
+        gap: 3rem;
+
+      @include list();
+      
+    }
+
+    button{
+        @include btn();
+    }
+}
+
+.homepage{
+    // padding: 6% 0%;
+    padding: 6% 8%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: space-between;
+  background-color: #D9FBEA;
+//   background-color: #E5FDF0;
+  }
+
+  
+
+  .homepic .pic img{
+    width: 38rem;
+    height: 28rem;
+    // box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    cursor: pointer;
+    /* border-radius: 50%; */
+    background: transparent;
+    
+   
+  }
+
+  .hometext h1{
+    margin-top: 0;
+    font-size: 4rem;
+  
+  }
+  .hometext h4{
+    gap: 1rem;
+    margin-top: -1rem;
+    font-size: 1.2rem;
+    
+  }
+   .NavLink,.address_btn,.alert_btn{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.6rem 1.6rem;
+    background-color: #0EBA82;
+    border-radius: 0.2rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;  
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+  
+  }
+  
+
+  .serv_page{
+      
+      gap: 3rem;
+      .cards{
+        padding: 4% 8%;
+
+        .card_txt{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            p{
+                margin-top: 0%;
+            }
+        }
+
+        .card_page{
+            display: flex;
+            flex-direction: row;
+            margin-top: 2.5rem;
+            gap: 2rem;
+            
+            .card{
+                padding: 1rem;
+                // border: 0.1rem solid black;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                img{
+                    width: 2rem;
+                    height: 2rem;
+                }
+            }
+        }
+    }
+
+    .start{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // justify-content: center;
+        margin-top: 2.5rem;
+        // border: 0.1rem solid black;
+        padding: 3.5rem 0;
+        background-color: #0EBA82;
+        h1{
+            margin-top: 0%;
+        }
+        p{
+            margin-top: 0%;
+        }
+        button{
+            color: #0EBA82;
+            background-color: white;
+            margin-top: 1rem;
+        }
+    }
+  }
+
+
+  $app-bg: #f4f4f4;
+  $primary-color: #28a745;
+  $text-color: #333;
+  $border-radius: 8px;
+  
+  .app-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: $app-bg;
+    padding: 20px;
+    min-height: 100vh;
+  
+    h1 {
+      color: $text-color;
+    }
+  }
+  
+  .bmi-diet {
+    background: white;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: $border-radius;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  
+    h2 {
+      color: $primary-color;
+    }
+  
+    .input-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+  
+      label {
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+  
+      input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+    }
+  
+    button {
+      background-color: $primary-color;
+      color: white;
+      border: none;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+  
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+  
+    .result {
+      margin-top: 15px;
+  
+      h2 {
+        margin: 0;
+      }
+  
+      p {
+        font-size: 18px;
+        font-weight: bold;
+        color: $text-color;
+      }
+  
+      .underweight { color: #ffa500; }
+      .normal-weight { color: #28a745; }
+      .overweight { color: #dc3545; }
+      .obese { color: #8b0000; }
+    }
+  
+    .diet-plan {
+      margin-top: 20px;
+      padding: 15px;
+      background: #f8f9fa;
+      border-radius: $border-radius;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+  
